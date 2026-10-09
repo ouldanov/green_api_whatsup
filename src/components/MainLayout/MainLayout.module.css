@@ -1,0 +1,22 @@
+.main-layout {
+  flex: 1;
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'sidebar body';
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 400px 1fr;
+}
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background: var(--bg);
+  font: var(--font-header);
+  border-bottom: 1px solid var(--secondary-bg);
+}
+.header b {
+  color: var(--accent-high);
+}

@@ -1,0 +1,19 @@
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 360px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 12px;
+  background: var(--modal-bg);
+}
+.description {
+  font: var(--font-small);
+  text-align: center;
+  color: var(--secondary);
+}
+.submit {
+  width: 100%;
+}

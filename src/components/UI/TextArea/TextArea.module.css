@@ -1,0 +1,40 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.wrapper label {
+  font: var(--font-small);
+  margin-bottom: 4px;
+}
+.input {
+  position: relative;
+  transition: all 400ms ease;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  width: auto;
+  border-radius: 8px;
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--secondary-bg);
+  padding: 12px;
+  color: var(--text);
+  resize: none;
+}
+.focus,
+.input:focus:not(:disabled) {
+  border: 1px solid var(--accent);
+}
+.error textarea {
+  border: 1px solid var(--error);
+}
+.error-description {
+  font: var(--font-small);
+  color: var(--error);
+  margin-top: 4px;
+}
+
+.disabled .input {
+  cursor: not-allowed;
+}

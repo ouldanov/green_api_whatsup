@@ -1,0 +1,36 @@
+.body {
+  grid-area: body;
+  display: flex;
+}
+.messages {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  gap: 20px;
+  min-width: 500px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.message {
+  position: relative;
+  padding: 12px 52px 12px 12px;
+  border-radius: 12px;
+  width: fit-content;
+  background: var(--secondary-bg);
+}
+.message-self {
+  position: relative;
+  padding: 12px 52px 12px 12px;
+  border-radius: 12px;
+  width: fit-content;
+  background: var(--accent);
+  margin-left: auto;
+}
+.time {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  font: var(--font-small);
+  color: var(--secondary);
+}

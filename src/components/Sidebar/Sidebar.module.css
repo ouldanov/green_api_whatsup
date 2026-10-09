@@ -1,0 +1,24 @@
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: var(--bg);
+  border-right: 1px solid var(--secondary-bg);
+}
+.phone-row {
+  display: flex;
+  gap: 8px;
+  line-height: 46px;
+}
+.phone-prefix {
+  margin-top: 16px;
+  line-height: 40px;
+  height: 40px;
+}
+.description {
+  font: var(--font-small);
+  color: var(--secondary);
+  line-height: 20px;
+  margin-bottom: 20px;
+}
